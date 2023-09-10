@@ -1,0 +1,92 @@
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #845EC2;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 20% auto;
+    min-height: 100%;
+    grid-template-rows: 50px 50% auto 60px;
+
+}
+
+header,
+main,
+aside,
+footer,
+section,div {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+    align-items: center;
+    text-align: center;
+
+}
+
+header {
+    background-color: #A178DF;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #BE93FD;
+    grid-area: 4/1/5/5;
+}
+
+header div {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FACCFF;
+}
+aside {
+    grid-row: 2/3;
+    background-color: #DCB0FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+   grid-area: 2/2/3/5;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+section{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: bisque;
+    border-radius: 100px;
+}
+
+div {
+    grid-area: 3/3/4/5;
+    background-color: cornflowerblue;
+}
+
+main div {
+    background-color: floralwhite;
+    width: auto;
+    margin: 2em;
+    height: 15px;
+
+}
+
+aside div {
+    background-color:antiquewhite;
+    width: 20px;
+    height: 10px;
+    display: block;
+}
